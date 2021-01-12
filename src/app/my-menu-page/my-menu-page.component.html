@@ -1,0 +1,18 @@
+<div class = 'content-box'>
+    <h3>My Food Menu</h3>
+</div>
+<div class='content-box'*ngFor = 'let menu of menu'>
+    <h3>{{menu.name}}</h3>
+    <p>{{menu.description}}</p>
+    <p>NGN{{menu.price}}</p>
+    <div class='buttons-container'>
+        <a routerLink='/edit-menu/{{menu.id}}'>
+            <button>Edit</button>
+        </a>
+        <button (click) = 'onDeleteClicked(menu.id)'>Delete</button>
+    </div>
+</div>
+<a routerLink= '/new-menu'>
+    <button>Add Food Item</button>
+</a>
+

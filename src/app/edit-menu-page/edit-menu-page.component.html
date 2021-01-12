@@ -1,0 +1,39 @@
+<!--<div class = 'content-box'>
+    <h2>Edit Your Menu</h2>
+    <app-add-data-form buttonText = 'Save Changes' (onSubmit) = 'onSubmit()'
+    [currentId] = 'menu.id'
+    [currentName] = 'menu.name'
+    [currentDescription] = 'menu.description'
+    [currentPrice] = 'menu.price'></app-add-data-form>
+</div>-->
+<div class='content-box'>
+    <h2>Edit Menu</h2>
+    <form (ngSubmit) = 'onSubmit()'>
+        <div>
+            <label for='id'>
+                Id:   
+            </label>
+            <input id='id' name= 'id' type='text' required [(ngModel)] = 'this.menu.id' disabled/>
+        </div>
+        <div>
+            <label for='name'>
+                Name:   
+            </label>
+            <input id='name' name= 'name' type='text' required [(ngModel)] = 'this.menu.name'/>
+        </div>
+        <div>
+            <label for='description'>
+                Item Description:   
+            </label>
+            <input id='description' name= 'description' type='text' required [(ngModel)] = 'this.menu.description'/>
+        </div>
+        <div>
+            <label for='price'>
+                Price:   
+            </label>
+            <input id='price' name= 'price' type='text' required [(ngModel)] = 'this.menu.price'/>
+        </div>
+        <button type = 'submit'>Update Menu</button>
+    </form>
+    <!--<app-add-data-form buttonText = 'Add Food Item' (onSubmit) = 'onSubmit()'></app-add-data-form>-->
+</div>

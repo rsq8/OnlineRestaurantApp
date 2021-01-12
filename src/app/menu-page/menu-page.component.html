@@ -1,0 +1,10 @@
+<div>
+    <h3>select a meal</h3>
+    <div class = 'content-box' *ngFor = 'let menu of menu'>
+        <a routerLink = '/menu/{{menu.id}}'>
+            <h3>{{menu.name}}</h3>
+            <p>{{menu.description}}</p>
+             <p>NGN{{menu.price}}</p> 
+        </a>
+    </div>
+</div>>

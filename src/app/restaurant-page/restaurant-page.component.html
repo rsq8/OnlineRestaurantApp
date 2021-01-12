@@ -1,0 +1,8 @@
+<div>
+    <h3>Pick a restaurant</h3>
+    <div class = 'content-box' *ngFor = 'let restaurant of restaurant'>
+        <a routerLink = '/restaurant/{{restaurant.id}}'>
+            <h3>{{restaurant.name}}</h3>
+        </a>
+    </div>
+</div>>

@@ -1,0 +1,8 @@
+<div>
+    <h3>Choose your City!</h3>
+    <div class = 'content-box' *ngFor = 'let city of city'>
+        <a routerLink = '/city/{{city.id}}'>
+            <h3>{{city.name}}</h3>
+        </a>
+    </div>
+</div>

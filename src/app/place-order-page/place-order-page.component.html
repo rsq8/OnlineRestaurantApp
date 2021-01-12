@@ -1,0 +1,37 @@
+<div class= 'content-box'>
+    <h3>Order Now!</h3>
+    <div>
+        <label>
+            Name
+            <input name = 'name' [(ngModel)] = 'name'/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Phone
+            <input name = 'phone' [(ngModel)] = 'phone'/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Email
+            <input name = 'email' [(ngModel)] = 'email'/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Address
+            <input name = 'address' [(ngModel)] = 'address'/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Notes for Rider
+            <textarea name = 'notes' 
+            rows = '5'
+            cols = '20'
+            [(ngModel)] = 'notes'></textarea>
+        </label>
+    </div>
+    <button (click) = 'placeOrder()'>Place Order</button>
+</div>

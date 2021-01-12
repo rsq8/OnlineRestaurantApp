@@ -1,0 +1,9 @@
+<div class = 'content-box'>
+    <h3>Orders Placed</h3>
+</div>
+<div class='content-box' *ngFor = 'let menu of menu'>
+    <h3>{{menu.name}}</h3>
+    <p>{{menu.description}}</p>
+    <p>NGN{{menu.price}}</p>
+</div>
+

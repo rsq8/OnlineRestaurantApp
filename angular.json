@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "ServeByte-Inc"
+  "defaultProject": "ServeByte-Inc",
+  "cli": {
+    "analytics": "fcfa8dc8-8676-46d9-b391-4e34ad93c1c9"
+  }
 }

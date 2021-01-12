@@ -1,0 +1,11 @@
+<div class = 'content-box'>
+    <a routerLink = '/restaurant/:id'>
+        <button>Back</button>
+    </a>
+    <h2>{{menu.name}}</h2>
+    <p>{{menu.description}}</p>
+    <p>NGN{{menu.price}}</p>
+    <a routerLink = '/place-order/{{menu.id}}'>
+        <button>Place an order for {{menu.name}}</button>
+    </a>
+</div> 
